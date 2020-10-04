@@ -21,6 +21,10 @@ app.use('/auth', routes.auth);
 app.use('/cars', routes.cars);
 app.use('/drivers', routes.drivers);
 
+app.get('/cars', (req, res) => {
+    res.render('index.ejs');
+})
+
 app.get('/drivers', (req, res) => {
     res.render('drivers/index.ejs');
 })
