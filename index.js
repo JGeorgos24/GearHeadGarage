@@ -21,8 +21,8 @@ app.use('/auth', routes.auth);
 app.use('/cars', routes.cars);
 app.use('/drivers', routes.drivers);
 
-app.get('/cars', (req, res) => {
-    res.render('cars/index.ejs');
+app.get('/drivers', (req, res) => {
+    res.render('drivers/index.ejs');
 })
 
 // listen is used to run your app on port 3002. 
