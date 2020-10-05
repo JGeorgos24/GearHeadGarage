@@ -81,7 +81,7 @@ const checkUser = (req, res) => {
                         res.cookie('jwt', token)
                         res.redirect(`/drivers/profile`);
                     } else {
-                        res.send('Incorrect Password')
+                        res.send('incorrect password')
                     }
                 });
             }
