@@ -3,7 +3,9 @@ const router= express.Router();
 const ctrl = require('../controllers');
 
 
-
+router.get('/profile', ctrl.drivers.profilePage)
+// router.put('/profile/:index', ctrl.users.editProfile)
+// router.delete('/:index', ctrl.users.deleteProfile)
 
 
 

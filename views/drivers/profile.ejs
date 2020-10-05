@@ -21,21 +21,40 @@
         <div class="nav-wrapper">
             <div id="left-nav">
                 <a href="#">About Us</a>
-                <a href="#" class="add-pipe">Show Room</a>
-                <a href="cars/addCar" class="add-pipe">Add a Car</a>
+                <a href="/cars/showroom" class="add-pipe">Show Room</a>
+                <a href="/cars/addCar" class="add-pipe">Add a Car</a>
             </div>
             <div id="right-nav">
                 <a href="/auth/signup">Register</a>
                 <a href="/auth/login" class="add-pipe">Login</a>
-        </div>
-        <div class="red-line"></div>
+            </div>
+            <div class="red-line"></div>
     </header>
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <div class="image-box">
-        <img id='logo' src="https://i.imgur.com/MVAYwrJ.png" alt="GHG Logo" />
-        </div>
+        <form action="/drivers/profile/<%=driver.id%>?_method=PUT" method="POST">
+            Name : <input type="text" name="name" value="<%= driver.name %>"></input> <br /><br />
+            Username: <input type="text" name="username" value="<%= driver.username %>"></input><br /><br />
+            Password: <input type="text" name="password" value="<%=driver.password %>"></input><br /><br />
+            Gender: <input type="text" name="age" value="<%= driver.gender%>"></input><br /><br />
+            Age: <input type="number" name="age" value="<%= driver.age%>"></input><br /><br />
+            Experience:<input type="number" name="drivingExperience" value="<%= driver.drivingExperience %>"></input><br /><br />
+            <input type="submit" value="Edit"><br /><br />
+        </form>
+
+        <form action="/drivers/<%=driver.id%>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete" />
+        </form>
+
+        </header><br /><br />
+        <h3>List of Cars</h3>
+        <ul>
+            <% for (i=0; i < driver.Cars.length; i++){ %>
+            <li><a href="/cars/<%driver.Cars[i].id %>"><%= driver.Cars[i].make %></a></li>
+            <% } %>
+        </ul>
+        <a href="/showroom">View all cars</a>
     </div>
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
 
@@ -45,7 +64,7 @@
                 <a href="#">Twitter</a>
                 <a href="#" class="add-pipe">Facebook</a>
                 <a href="#" class="add-pipe">Instagram</a>
-                <a href="/cars" class= "add-pipe"> GHG Homepage </a>
+                <a href="/cars" class="add-pipe"> GHG Homepage </a>
             </div>
         </div>
     </footer>

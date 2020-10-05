@@ -50,8 +50,8 @@ const createUser = (req, res) => {
                     );
                     res.cookie('jwt', token);
                     //once added to cookie, direct user to profile page
-                    // res.redirect(`/drivers/profile/${newDriver.id}`);
-                    res.redirect('/cars');
+                    res.redirect(`/drivers/profile/${newDriver.id}`);
+                
                 })
 
         })
