@@ -11,9 +11,9 @@ const jwt = require('jsonwebtoken');
 // shows signup page
 const renderSignup = (req, res) => {
     Driver.findByPk(req.params.index)
-        .then(user => {
+        .then(driver => {
             res.render('drivers/register.ejs', {
-                user: user
+                driver: driver
             });
         })
 }
@@ -81,7 +81,10 @@ const checkUser = (req, res) => {
                         res.cookie('jwt', token)
                         res.redirect(`/drivers/profile`);
                     } else {
-                        res.send('Incorrect Password')
+                        console.log(foundDriver)
+                        console.log(match)
+                        console.log(req.body)
+                        res.send('incorrect password')
                     }
                 });
             }

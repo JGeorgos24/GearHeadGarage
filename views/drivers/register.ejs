@@ -34,9 +34,16 @@
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <div class="image-box">
-        <img id='logo' src="https://i.imgur.com/MVAYwrJ.png" alt="GHG Logo" />
-        </div>
+        <div id="signUpBox">
+        <form action="/auth/signup" method="POST">
+            <div class="signUpCredentials">
+            <input type="text" name="name" placeholder="Name" /><br /><br />
+            <input type="text" name="username" placeholder="Username"/><br /><br />
+            <input type="text" name="password" placeholder="Password"/><br /><br />
+            <input type="submit" value="Sign Up">
+            </div>
+        </form>
+    </div>
     </div>
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
 
@@ -46,7 +53,7 @@
                 <a href="#">Twitter</a>
                 <a href="#" class="add-pipe">Facebook</a>
                 <a href="#" class="add-pipe">Instagram</a>
-                <a href="/cars" class= "add-pipe"> GHG Homepage </a>
+                <a href="/cars" class="add-pipe"> GHG Homepage </a>
             </div>
         </div>
     </footer>

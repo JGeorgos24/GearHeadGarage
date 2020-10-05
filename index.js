@@ -24,7 +24,6 @@ const verifyToken = (req, res, next) => {
         if(err || !decodedDriver){
             return res.send('Error in JWT');
         }
-        console.log(decodedDriver)
         req.driver = decodedDriver;
 
         next();
@@ -34,6 +33,8 @@ const verifyToken = (req, res, next) => {
 app.use('/auth', routes.auth);
 app.use('/cars', routes.cars);
 app.use('/drivers', verifyToken, routes.drivers);
+
+
 
 app.get('/cars', (req, res) => {
     res.render('index.ejs');
