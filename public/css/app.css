@@ -25,7 +25,7 @@ footer {
     flex: 1 0 auto;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .footer {
@@ -116,7 +116,7 @@ a {
     }
 }
 
-#loginBox {
+#loginBox, #addCar {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +125,6 @@ a {
     background-color: #C7D6D5;
 }
 
-.loginCredentials {
+.loginCredentials, .addCarContent {
     text-align: center;
 }
