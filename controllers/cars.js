@@ -8,6 +8,10 @@ const index = (req, res) => {
         res.render('index.ejs')  
 }
 
+const aboutUs = (req, res) => {
+    res.render('aboutUs.ejs')
+}
+
 const addCar = (req, res) => {
     res.render('addCar.ejs')
 }
@@ -68,6 +72,7 @@ const deleteCar = (req,res) => {
 
 module.exports = {
     index,
+    aboutUs,
     addCar,
     showRoom,
     createCar,

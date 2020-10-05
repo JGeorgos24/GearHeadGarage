@@ -4,6 +4,8 @@ const ctrl = require('../controllers');
 
 router.get('/cars', ctrl.cars.index);
 
+router.get('/aboutUs', ctrl.cars.aboutUs);
+
 router.get('/addCar', ctrl.cars.addCar);
 
 router.get('/showRoom', ctrl.cars.showRoom);

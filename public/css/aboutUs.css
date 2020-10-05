@@ -120,8 +120,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
-    width: 300px;
+    height: 60vh;
+    width: 80vw;
     background-color: #c7d6d57a;
     border-radius: 20px;
 }
@@ -151,15 +151,29 @@ a {
 }
 .loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars, .aboutUsContent {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    height: 150px;
-    width: 200px;
+    height: 50vh;
+    width: 70vw;
     background-color: #C7D6D5;
     border-radius: 15px;
     text-align: center;
     padding: 10px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
-    
+
+.gearsImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10vh;
+    width: 65vw;
+    background: url('https://thetattooedbookgeek.files.wordpress.com/2018/07/serenedimwittedegg-size_restricted.gif?w=356');
+    background-color: #C7D6D5;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+}
