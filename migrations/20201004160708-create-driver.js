@@ -22,13 +22,16 @@ module.exports = {
         allowNull: false
       },
       age: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: true
       },
       gender: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: true
       },
       drivingExperience: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
+        allowNull: true
       },
       createdAt: {
         allowNull: false,

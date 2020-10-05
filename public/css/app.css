@@ -149,6 +149,22 @@ a {
     padding: 10px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
+
+.profileCredentials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 45vh;
+    width: 60vw;
+    background-color: #C7D6D5;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+
 .loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars, .aboutUsContent {
     display: flex;
     justify-content: center;

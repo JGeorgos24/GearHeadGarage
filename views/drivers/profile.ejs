@@ -14,7 +14,7 @@
 
         <div id="top-box">
             <div id="top-text">
-                <h1>Gear Head Garage</h1>
+                <h1>Profile Page</h1>
             </div>
         </div>
 
@@ -28,33 +28,39 @@
                 <a href="/auth/signup">Register</a>
                 <a href="/auth/login" class="add-pipe">Login</a>
             </div>
+        </div>
             <div class="red-line"></div>
     </header>
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <form action="/drivers/profile/<%=driver.id%>?_method=PUT" method="POST">
-            Name : <input type="text" name="name" value="<%= driver.name %>"></input> <br /><br />
-            Username: <input type="text" name="username" value="<%= driver.username %>"></input><br /><br />
-            Password: <input type="text" name="password" value="<%=driver.password %>"></input><br /><br />
-            Gender: <input type="text" name="age" value="<%= driver.gender%>"></input><br /><br />
-            Age: <input type="number" name="age" value="<%= driver.age%>"></input><br /><br />
-            Experience:<input type="number" name="drivingExperience" value="<%= driver.drivingExperience %>"></input><br /><br />
-            <input type="submit" value="Edit"><br /><br />
-        </form>
+        <div class="profileCredentials">
+            <h1>
+                Welcome <%= driver.name %>
+            </h1>
+            <form action="/drivers/profile/<%=driver.id%>?_method=PUT" method="POST">
+                Name : <input type="text" name="name" value="<%= driver.name %>"></input> <br />
+                Username: <input type="text" name="username" value="<%= driver.username %>"></input><br />
+                Password: <input type="text" name="password" value="<%=driver.password %>"></input><br />
+                Gender: <input type="text" name="gender" required="required" value="<%= driver.gender%>"></input><br />
+                Age: <input type="number" name="age" required="required" value="<%= driver.age%>"></input><br />
+                Experience:<input type="number" required="required" name="drivingExperience" value="<%= driver.drivingExperience %>"></input><br /><br />
+                <input type="submit" value="Edit"><br /><br />
+            </form>
 
-        <form action="/drivers/<%=driver.id%>?_method=DELETE" method="POST">
-            <input type="submit" value="Delete" />
-        </form>
+            <form action="/drivers/<%=driver.id%>?_method=DELETE" method="POST">
+                <input type="submit" value="Delete" />
+            </form>
 
-        </header><br /><br />
-        <h3>List of Cars</h3>
-        <ul>
-            <% for (i=0; i < driver.Cars.length; i++){ %>
-            <li><a href="/cars/<%driver.Cars[i].id %>"><%= driver.Cars[i].make %></a></li>
-            <% } %>
-        </ul>
-        <a href="/showroom">View all cars</a>
+            <h3>List of Cars</h3>
+            <ul>
+                <% for (i=0; i < driver.Cars.length; i++){ %>
+                <li><a href="/cars/<%driver.Cars[i].id %>"><%= driver.Cars[i].make %></a></li>
+                <% } %>
+            </ul>
+            <a href="/cars/showroom">View all cars</a>
+        </div>
+
     </div>
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
 
