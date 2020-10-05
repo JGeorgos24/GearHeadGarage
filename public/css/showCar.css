@@ -54,7 +54,7 @@ footer {
     justify-content: center;
     height: 14vh;
     width: 75vw;
-    font-size: 2.5vw;
+    font-size: 2.8vw;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -116,7 +116,7 @@ a {
     }
 }
 
-#loginBox, #addCar, #showMadeCar, #showRoom {
+#loginBox, #addCar, #showMadeCar, #showRoom, #aboutUs {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +149,7 @@ a {
     padding: 10px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
-.loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars {
+.loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars, .aboutUsContent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,10 +158,20 @@ a {
     width: 70vw;
     background-color: #C7D6D5;
     border-radius: 15px;
-    text-align: left;
+    text-align: center;
     padding: 10px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
 
-
+.carImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 35vh;
+    width: auto;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+}
     
