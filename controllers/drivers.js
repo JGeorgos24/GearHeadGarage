@@ -4,23 +4,17 @@ const Car = require('../models').Car;
 const Driver = require('../models').Driver;
 
 
-const index = (req, res) => {
-        res.render('index.ejs')  
-}
-
-
 // shows profile page of person. passes user and index
 const profilePage = (req, res) => {
     Driver.findByPk(req.driver.id, {
         include: [
             {
                 model: Car,
-                attributes: ['make', 'model']
+                attributes: ['make', 'model', 'year']
             }
         ]
     })
     .then(driverProfile => {
-        console.log(driverProfile);
         res.render('drivers/profile.ejs', {
             driver: driverProfile
         })
@@ -32,12 +26,11 @@ const profilePage = (req, res) => {
 
 const editProfile = (req, res) => {
     Driver.update(req.body, {
-        where: { id: req.params.index },
+        where: { id: req.driver.id },
         returning: true // MUST NEED TO SHOW CHANGE
     })
         .then(driver => {
-            res.redirect(`/drivers/profile`
-            )
+            res.redirect('/drivers/profile');
         })
 }
 
@@ -51,7 +44,6 @@ const deleteProfile = (req, res) => {
 
 
 module.exports = {
-    index,
     profilePage,
     editProfile,
     deleteProfile
