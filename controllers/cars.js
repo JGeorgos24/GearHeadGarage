@@ -8,8 +8,13 @@ const index = (req, res) => {
         res.render('index.ejs')  
 }
 
+const addCar = (req, res) => {
+    res.render('addCar.ejs')
+}
+
 
 
 module.exports = {
     index,
+    addCar
 }
