@@ -51,7 +51,7 @@ const createUser = (req, res) => {
                     console.log(token);
                     res.cookie('jwt', token);
                     //once added to cookie, direct user to profile page
-                    res.redirect(`/users/profile/${newDriver.id}`);
+                    res.redirect(`/drivers/profile/${newDriver.id}`);
                 })
 
         })
