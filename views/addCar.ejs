@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Gear Head Garage</title>
+    <title>GHG - Add Car</title>
     <link rel="stylesheet" href="/css/app.css" />
 </head>
 
@@ -14,7 +14,7 @@
 
         <div id="top-box">
             <div id="top-text">
-                <h1>Gear Head Garage</h1>
+                <h1>Add a Car to your Garage</h1>
             </div>
         </div>
 
@@ -25,25 +25,27 @@
                 <a href="cars/addCar" class="add-pipe">Add a Car</a>
             </div>
             <div id="right-nav">
-<<<<<<< HEAD
-                <a href="#">Register</a>
-                <a href="auth/login" class="add-pipe">Login</a>
-=======
                 <a href="/drivers">Register</a>
                 <a href="/drivers" class="add-pipe">Login</a>
->>>>>>> 69362a93c1249e61df2c3c2c402e665098b7a48a
             </div>
         </div>
         <div class="red-line"></div>
     </header>
 
-    <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
+
     <div class="content">
-        <div class="image-box">
-        <img id='logo' src="https://i.imgur.com/MVAYwrJ.png" alt="GHG Logo" />
+        <div class="addCar">
+                <form action="cars" method = "POST">
+                    Make: <input type="text" name="make" /> </br>
+                    Model: <input type="text" name="model" /> </br>
+                    Year: <input type="text" name="year" /> </br>
+                    ImageURL: <input type="text" name="imageURL" /> </br>
+                    Body Style: <input type="text" name="bodyStyle" />  </br>
+                    <input type="submit" value="Create Vehicle" />
+                </form>
         </div>
     </div>
-    <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
+
 
     <footer class="footer">
         <div class="nav-wrapper-footer">
@@ -58,3 +60,4 @@
 </body>
 
 </html>
+
