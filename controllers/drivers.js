@@ -19,7 +19,7 @@ const profilePage = (req, res) => {
             }
         ]
     })
-    .then(userProfile => {
+    .then(driverProfile => {
         console.log(driverProfile);
         res.render('drivers/profile.ejs', {
             driver: driverProfile
@@ -31,18 +31,18 @@ const profilePage = (req, res) => {
 
 
 const editProfile = (req, res) => {
-    User.update(req.body, {
+    Driver.update(req.body, {
         where: { id: req.params.index },
         returning: true // MUST NEED TO SHOW CHANGE
     })
-        .then(user => {
+        .then(driver => {
             res.redirect(`/drivers/profile`
             )
         })
 }
 
 const deleteProfile = (req, res) => {
-    User.destroy({ where: { id: req.params.index } })
+    Driver.destroy({ where: { id: req.params.index } })
         .then(() => {
             res.redirect('/cars');
         })

@@ -4,8 +4,8 @@ const ctrl = require('../controllers');
 
 
 router.get('/profile', ctrl.drivers.profilePage)
-// router.put('/profile/:index', ctrl.users.editProfile)
-// router.delete('/:index', ctrl.users.deleteProfile)
+router.put('/profile/:index', ctrl.drivers.editProfile)
+router.delete('/:index', ctrl.drivers.deleteProfile)
 
 
 
