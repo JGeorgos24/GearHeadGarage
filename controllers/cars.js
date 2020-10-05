@@ -12,9 +12,52 @@ const addCar = (req, res) => {
     res.render('addCar.ejs')
 }
 
+const showRoom = (req, res) => {
+    res.render('showRoom.ejs')
+}
 
+const createCar = (req, res) => {
+    Car.create(req.body)
+    .then(newCar => {
+        res.redirect('/cars');
+    })
+}
+
+
+const seeMadeCar = (req, res) => {
+    Car.findByPk(req.params.index ) 
+    // , {
+    //     include: [
+    //         {
+    //         model: Driver,
+    //         attributes: ['name']
+    //         }
+    //     ],
+    //     attributes: ['name', 'img']        
+    // })
+    .then(foundCar => {
+        res.render('showMadeCar.ejs', {
+        car: foundCar
+        });
+    }) 
+}
+
+
+
+const deleteCar = (req,res) => {
+    Fruit.destroy({
+        where: {id: req.params.index}
+    })
+    .then(() => {
+        res.redirect('/cars');  
+    })   
+}
 
 module.exports = {
     index,
-    addCar
+    addCar,
+    showRoom,
+    createCar,
+    seeMadeCar,
+    deleteCar
 }
