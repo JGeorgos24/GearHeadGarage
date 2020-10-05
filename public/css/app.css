@@ -116,7 +116,7 @@ a {
     }
 }
 
-#loginBox, #addCar {
+#loginBox, #addCar, #showMadeCar, #allCars {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,7 +126,7 @@ a {
     border-radius: 20px;
 }
 
-.loginCredentials, .addCarContent {
+.loginCredentials, .addCarContent, .showMadeCarContent, .allCarsContent {
     display: flex;
     justify-content: center;
     align-items: center;
