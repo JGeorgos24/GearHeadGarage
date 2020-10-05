@@ -24,7 +24,6 @@ const verifyToken = (req, res, next) => {
         if(err || !decodedDriver){
             return res.send('Error in JWT');
         }
-        console.log(decodedDriver)
         req.driver = decodedDriver;
 
         next();
