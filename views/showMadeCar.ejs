@@ -21,8 +21,8 @@
         <div class="nav-wrapper">
             <div id="left-nav">
                 <a href="#">About Us</a>
-                <a href="#" class="add-pipe">Show Room</a>
-                <a href="#" class="add-pipe">Add a Car</a>
+                <a href="/cars/showRoom" class="add-pipe">Show Room</a>
+                <a href="/cars/addCar" class="add-pipe">Add a Car</a>
             </div>
             <div id="right-nav">
                 <a href="/drivers">Register</a>
@@ -36,8 +36,8 @@
     <div class="content">
         <div id="showMadeCar">
             <div class= "showMadeCarContent">
-                Your <%=car.year%> <%=car.name%> <%=car.model%> looks like the image below. <br/> <br/>
-                <img alt="<%=car.year%> <%=car.name%> <%=car.model%>" src="<%=car.imageURL%>">
+                Your <%=cars.year%> <%=cars.name%> <%=cars.model%> looks like the image below. <br/> <br/>
+                <img alt="<%=cars.year%> <%=cars.name%> <%=cars.model%>" src="<%=cars.imageURL%>">
 
             </div>    
         </div>

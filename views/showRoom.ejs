@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>GHG - Show Room</title>
-    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/css/showRoom.css" />
 </head>
 
 <body>
@@ -21,8 +21,8 @@
         <div class="nav-wrapper">
             <div id="left-nav">
                 <a href="#">About Us</a>
-                <a href="#" class="add-pipe">Show Room</a>
-                <a href="#" class="add-pipe">Add a Car</a>
+                <a href="/cars/showRoom" class="add-pipe">Show Room</a>
+                <a href="/cars/addCar" class="add-pipe">Add a Car</a>
             </div>
             <div id="right-nav">
                 <a href="/drivers">Register</a>
@@ -34,18 +34,17 @@
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <div id="allCars">
-            <div class= "allCarsContent">
+        <div id="showRoom">
+            <div class= "showRoomCars">
                 <ul class= allMadeCars >
                     <% for(let i = 0; i <cars.length; i++) {%>
                         <li>
-                            <a class="carMMY" href="/cars/<%=cars[i].id%>"> <%=cars[i].year%> <%=cars[i].name%> <%=cars[i].model%> </a>
+                            <a class="carMMY" href="/cars/<%=cars[i].id%>"> <%=cars[i].year%> <%=cars[i].make%> <%=cars[i].model%> </a>
                 
                             <form action="/cars/<%=cars[i].id%>?_method=DELETE" method="POST">
                                 <input type="submit" value="Delete" />
                             </form>
                 
-                            <a class="editACar" href="/cars/<%=cars[i].id%>/edit"> Edit Car </a>
                         </li>
                         <br/>
                     <% } %>
