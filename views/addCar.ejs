@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>GHG - Add Car</title>
-    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/css/addCar.css" />
 </head>
 
 <body>
@@ -14,7 +14,7 @@
 
         <div id="top-box">
             <div id="top-text">
-                <h1>Add a Car to your Garage</h1>
+                <h1>Add a Car to Garage</h1>
             </div>
         </div>
 
@@ -22,7 +22,7 @@
             <div id="left-nav">
                 <a href="#">About Us</a>
                 <a href="#" class="add-pipe">Show Room</a>
-                <a href="cars/addCar" class="add-pipe">Add a Car</a>
+                <a href="#" class="add-pipe">Add a Car</a>
             </div>
             <div id="right-nav">
                 <a href="/drivers">Register</a>
@@ -32,20 +32,22 @@
         <div class="red-line"></div>
     </header>
 
-
+    <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <div class="addCar">
+        <div id="addCar">
+            <div class= "addCarContent">
                 <form action="cars" method = "POST">
-                    Make: <input type="text" name="make" /> </br>
-                    Model: <input type="text" name="model" /> </br>
-                    Year: <input type="text" name="year" /> </br>
-                    ImageURL: <input type="text" name="imageURL" /> </br>
-                    Body Style: <input type="text" name="bodyStyle" />  </br>
+                    <input type="text" name="make" placeholder="Make" /> </br> </br>
+                    <input type="text" name="model" placeholder="Model"/> </br> </br>
+                    <input type="text" name="year" placeholder="Year"/> </br> </br>
+                    <input type="text" name="imageURL" placeholder="Image URL"/> </br> </br>
+                    <input type="text" name="bodyStyle" placeholder="Body Style"/>  </br> </br>
                     <input type="submit" value="Create Vehicle" />
                 </form>
+            </div>    
         </div>
     </div>
-
+    <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
 
     <footer class="footer">
         <div class="nav-wrapper-footer">
