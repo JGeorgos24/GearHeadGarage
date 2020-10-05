@@ -25,7 +25,7 @@ module.exports = {
         year: 2020,
         imageURL: 'https://i.imgur.com/RxGEcXT.jpg',
         bodyStyle:'Coupe',
-        driverId: 3 
+        driverId: 3
       }
     ], {});
 
