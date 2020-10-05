@@ -116,7 +116,7 @@ a {
     }
 }
 
-#loginBox, #addCar, #showMadeCar, #allCars {
+#loginBox, #addCar, #showMadeCar, #showRoom {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -149,7 +149,7 @@ a {
     padding: 10px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
-.loginCredentials, .addCarContent, .showMadeCarContent, .allCarsContent {
+.loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars {
     display: flex;
     justify-content: center;
     align-items: center;
