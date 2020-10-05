@@ -16,10 +16,24 @@ app.use(express.static("public"));
 
 app.use(cookieParser());
 
+const verifyToken = (req, res, next) => {
+    let token = req.cookies.jwt;
+    console.log(`Token: ${token}`);
+
+    jwt.verify(token, process.env.JWT_SECRET, (err,decodedDriver) => {
+        if(err || !decodedDriver){
+            return res.send('Error in JWT');
+        }
+        console.log(decodedDriver)
+        req.driver = decodedDriver;
+
+        next();
+    })
+}
 
 app.use('/auth', routes.auth);
 app.use('/cars', routes.cars);
-app.use('/drivers', routes.drivers);
+app.use('/drivers', verifyToken, routes.drivers);
 
 app.get('/cars', (req, res) => {
     res.render('index.ejs');

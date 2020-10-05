@@ -89,10 +89,12 @@ const checkUser = (req, res) => {
         })
 }
 
+
+
 module.exports = {
 
     renderSignup,
     renderLogin,
     createUser,
-    checkUser
+    checkUser,
 }
