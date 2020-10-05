@@ -13,7 +13,21 @@ const addCar = (req, res) => {
 }
 
 const showRoom = (req, res) => {
-    res.render('showRoom.ejs')
+    {
+        Car.findAll({
+            order: [
+                ['make', 'ASC'],
+                ['id', 'ASC']
+            ]
+        }) 
+        .then(allCars => {
+             console.log(allCars);
+            res.render('showRoom.ejs', {
+                cars: allCars 
+            })  
+        })  
+        
+    }
 }
 
 const createCar = (req, res) => {
@@ -33,7 +47,7 @@ const seeMadeCar = (req, res) => {
     //         attributes: ['name']
     //         }
     //     ],
-    //     attributes: ['name', 'img']        
+    //     attributes: ['year', 'make', 'model', 'imageURL']        
     // })
     .then(foundCar => {
         res.render('showMadeCar.ejs', {
@@ -45,7 +59,7 @@ const seeMadeCar = (req, res) => {
 
 
 const deleteCar = (req,res) => {
-    Fruit.destroy({
+    Car.destroy({
         where: {id: req.params.index}
     })
     .then(() => {

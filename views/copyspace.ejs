@@ -1,0 +1,14 @@
+<ul class= allMadeCars >
+    <% for(let i = 0; i <Car.length; i++) {%>
+        <li>
+            <a class="carMMY" href="/cars/<%=cars[i].id%>"> <%=cars.year%> <%=cars.name%> <%=cars.model%> </a>
+
+            <form action="/cars/<%=cars[i].id%>?_method=DELETE" method="POST">
+                <input type="submit" value="Delete" />
+            </form>
+
+            <a class="editACar" href="/cars/<%=cars[i].id%>/edit"> Edit Car </a>
+        </li>
+        <br/>
+    <% } %>
+</ul>
