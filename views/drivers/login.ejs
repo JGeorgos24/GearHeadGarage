@@ -34,11 +34,18 @@
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <div class="image-box">
-        <img id='logo' src="https://i.imgur.com/MVAYwrJ.png" alt="GHG Logo" />
+        <div id="loginBox">
+        <form action="/auth/login" method="POST">
+            <div class="loginCredentials">
+            <input type="text" name="username" placeholder="username"/><br/><br/>
+            <input type="text" name="password" placeholder="password"/><br/><br/>
+            <input type="submit" value="Login">
+            </div>
+        </form>
         </div>
     </div>
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
+
 
     <footer class="footer">
         <div class="nav-wrapper-footer">

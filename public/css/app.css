@@ -115,3 +115,16 @@ a {
         margin-left: 0;
     }
 }
+
+#loginBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    width: 300px;
+    background-color: #C7D6D5;
+}
+
+.loginCredentials {
+    text-align: center;
+}
