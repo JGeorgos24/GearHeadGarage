@@ -48,10 +48,10 @@ const createUser = (req, res) => {
                             expiresIn: '30 days'
                         }
                     );
-                    console.log(token);
                     res.cookie('jwt', token);
                     //once added to cookie, direct user to profile page
-                    res.redirect(`/drivers/profile/${newDriver.id}`);
+                    // res.redirect(`/drivers/profile/${newDriver.id}`);
+                    res.redirect('/cars');
                 })
 
         })
@@ -81,9 +81,6 @@ const checkUser = (req, res) => {
                         res.cookie('jwt', token)
                         res.redirect(`/drivers/profile`);
                     } else {
-                        console.log(foundDriver)
-                        console.log(match)
-                        console.log(req.body)
                         res.send('incorrect password')
                     }
                 });
