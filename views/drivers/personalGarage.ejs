@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>GHG - Add Car</title>
-    <link rel="stylesheet" href="/css/addCar.css" />
+    <title>Gear Head Garage</title>
+    <link rel="stylesheet" href="/css/app.css" />
 </head>
 
 <body>
@@ -14,38 +14,39 @@
 
         <div id="top-box">
             <div id="top-text">
-                <h1>Add a Car to Garage</h1>
+                <h1>Personal Garage</h1>
             </div>
         </div>
 
         <div class="nav-wrapper">
             <div id="left-nav">
                 <a href="/cars/aboutUs">About Us</a>
-                <a href="/cars/showRoom" class="add-pipe">Show Room</a>
-                
+                <a href="/cars/showroom" class="add-pipe">Show Room</a>
+                <a href="/cars/addCar/?driverId=<%=driver.id%>" class="add-pipe">Add a Car</a>
             </div>
             <div id="right-nav">
                 <a href="/drivers/profile"> Back to Driver's Profile</a>
             </div>
         </div>
-        <div class="red-line"></div>
+            <div class="red-line"></div>
     </header>
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <div id="addCar">
-            <div class= "addCarContent">
-                <h3>Create a Vehicle</h3>
-                <form action="/cars/<%=driverId%>" method = "POST">
-                    <input type="text" name="make" placeholder="Make" /> </br> </br>
-                    <input type="text" name="model" placeholder="Model"/> </br> </br>
-                    <input type="text" name="year" placeholder="Year"/> </br> </br>
-                    <input type="text" name="imageURL" placeholder="Image URL"/> </br> </br>
-                    <input type="text" name="bodyStyle" placeholder="Body Style"/>  </br> </br>
-                    <input type="submit" value="Create Vehicle" />
-                </form>
-            </div>    
+        <div class="profileCredentials">
+            <h1>
+                Welcome <%= driver.name %> to your Personal Garage.
+            </h1>
+
+            <h3>List of Cars</h3>
+            <ul>
+                <% for (i=0; i < driver.Cars.length; i++){ %>
+                <li><a href="/cars/<%driver.Cars[i].id %>"><%= driver.Cars[i].make %></a></li>
+                <% } %>
+            </ul>
+            <a href="/cars/showroom">Navigate to Showroom</a>
         </div>
+
     </div>
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
 
@@ -62,4 +63,3 @@
 </body>
 
 </html>
-
