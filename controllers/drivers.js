@@ -55,7 +55,7 @@ const personalGarage = (req, res) => {
         include: [
             {
                 model: Car,
-                attributes: ['id','make', 'model', 'year']
+                attributes: ['make', 'model', 'year', 'id']
             }
         ]
     })
