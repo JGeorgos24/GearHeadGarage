@@ -66,9 +66,11 @@ const personalGarage = (req, res) => {
     })
 }
 
+
+
 module.exports = {
     profilePage,
     editProfile,
     deleteProfile,
-    personalGarage
+    personalGarage,
 }
