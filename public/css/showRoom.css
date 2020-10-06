@@ -179,6 +179,7 @@ a {
     overflow: scroll;
 }
 
+
 .car-list {
     position: relative;
     width: 300px;
@@ -216,13 +217,13 @@ a {
     background-color: #15181abb;
     text-align: center;
     font-size: 30px;
-  }
+}
   
-  .car-list:hover .overlay {
+.car-list:hover .overlay {
     opacity: 1;
-  }
+}
   
-  .text {
+.text {
     color: white;
     font-size: 4vh;
     position: absolute;
@@ -230,7 +231,4 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-  }
-
-
 }
