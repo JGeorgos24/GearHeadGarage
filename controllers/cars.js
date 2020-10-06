@@ -44,7 +44,7 @@ const createCar = (req, res) => {
     req.body.driverId = req.params.driverId
     Car.create(req.body)
     .then(newCar => {
-        res.redirect('/cars/showroom');
+        res.redirect('/cars/showRoom');
     })
 }
 

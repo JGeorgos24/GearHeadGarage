@@ -38,6 +38,7 @@
                 <ul class= allMadeCars >
                     <% for(let i = 0; i <cars.length; i++) {%>
                         <li>
+                            
                             <a class="carMMY" href="/cars/<%=cars[i].id%>"> <%=cars[i].year%> <%=cars[i].make%> <%=cars[i].model%> </a>
                             
                             <form action="/cars/<%=cars[i].id%>?_method=DELETE" method="POST">

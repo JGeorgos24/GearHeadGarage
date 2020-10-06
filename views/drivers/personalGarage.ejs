@@ -33,19 +33,22 @@
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <div id="personalGarage">
-            <div class= "personalGarageContent">
-                <ul class= allDriversCars >
-                    <% for(let i = 0; i <driver.Cars.length; i++) {%>
-                        <li>
-                            <a class="driversCars" href="/cars/<%=driver.Cars[i].id%>"> <%=driver.Cars[i].year%> <%=driver.Cars[i].make%> <%=driver.Cars[i].model%> </a>
-                    
-                        </li>
-                        <br/>
-                    <% } %>
-                </ul>
-            </div>    
-        </div>       
+        <div class="profileCredentials">
+            <h1>
+                Welcome <%= driver.name %> to your Personal Garage.
+            </h1>
+
+            <h3>List of Cars</h3>
+            <ul>
+                <% for (i=0; i < driver.Cars.length; i++){ %>
+                <li><a href="/cars/<%=driver.Cars[i].id %>"><%=
+                driver.Cars[i].year %> <%= driver.Cars[i].make %> <%=
+                driver.Cars[i].model %></a></li>
+                <% } %>
+            </ul>
+            <a href="/cars/showroom">Navigate to Showroom</a>
+        </div>
+
     </div>
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
 
