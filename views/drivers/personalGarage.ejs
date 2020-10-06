@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>GHG - Personal Garage</title>
-    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/css/showRoom.css" />
 </head>
 
 <body>
@@ -28,40 +28,42 @@
                 <a href="/drivers/profile"> Back to Driver's Profile</a>
             </div>
         </div>
-            <div class="red-line"></div>
+        <div class="red-line"></div>
     </header>
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-
-        <div id="personalGarage">
-            <div class= "personalGarageContent">
-                <ul class= allDriversCars >
+        <div id="showRoom">
+            <div class= "showRoomCars">
                     <% for(let i = 0; i <driver.Cars.length; i++) {%>
-                        <li>
-                            <a class="driversCars" href="/cars/<%=driver.Cars[i].id%>"> <%=driver.Cars[i].year%> <%=driver.Cars[i].make%> <%=driver.Cars[i].model%> </a>
-                            <form action="/cars/<%=driver.Cars[i].id%>?_method=DELETE" method="POST">
-                                <input type="submit" value="Sell Car" />
-                            </form>   
-                        </li>
-                        <br/>
+                        <div class='car-list'>
+                            <% console.log(driver.Cars[i]) %>
+                             <img class="thumbnail" src="<%=driver.Cars[i].imageURL%>" alt="picture of car" srcset=""/>
+                             <div class="overlay">
+                                <div
+                                class="text"><%=driver.Cars[i].year%><br/><%=driver.Cars[i].make%><br/><%=driver.Cars[i].model%><br/></div>
+                                <form id="sell-car" action="/cars/<%=driver.Cars[i].id%>?_method=DELETE" method="POST">
+                                    <input type="submit" value="Sell Car" />
+                                </form>
+                              </div>
+                        </div>
                     <% } %>
-                </ul>
             </div>    
-        </div>       
-    </div>
-    <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
-
-    <footer class="footer">
-        <div class="nav-wrapper-footer">
-            <div id="center-nav">
-                <a href="https://twitter.com/head_garage" target="_blank">Twitter</a>
-                <a href="https://www.facebook.com/profile.php?id=100055866800268" class="add-pipe" target="_blank">Facebook</a>
-                <a href="https://www.instagram.com/gearheadgarage__/" class="add-pipe" target="_blank">Instagram</a>
-                <a href="/cars" class= "add-pipe"> GHG Homepage </a>
-            </div>
         </div>
-    </footer>
+    </div>
+        <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
+
+        <footer class="footer">
+            <div class="nav-wrapper-footer">
+                <div id="center-nav">
+                    <a href="https://twitter.com/head_garage" target="_blank">Twitter</a>
+                    <a href="https://www.facebook.com/profile.php?id=100055866800268" class="add-pipe"
+                        target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/gearheadgarage__/" class="add-pipe" target="_blank">Instagram</a>
+                    <a href="/cars" class="add-pipe"> GHG Homepage </a>
+                </div>
+            </div>
+        </footer>
 </body>
 
 </html>
