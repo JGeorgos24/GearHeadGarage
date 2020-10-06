@@ -202,6 +202,8 @@ a {
 }
 
 .overlay {
+    display: flex;
+    flex-direction: column-reverse;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -212,7 +214,7 @@ a {
     opacity: 0;
     transition: .5s ease;
     background-color: #15181abb;
-    text-align: left;
+    text-align: center;
     font-size: 30px;
   }
   
@@ -229,3 +231,6 @@ a {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
+
+
+}
