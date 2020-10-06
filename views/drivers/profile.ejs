@@ -57,13 +57,6 @@
                 <input type="submit" value="Delete" />
             </form>
 
-            <h3>List of Cars</h3>
-            <ul>
-                <% for (i=0; i < driver.Cars.length; i++){ %>
-                <li><a href="/cars/<%driver.Cars[i].id %>"><%= driver.Cars[i].make %></a></li>
-                <% } %>
-            </ul>
-            <a href="/cars/showroom">View all cars</a>
         </div>
 
     </div>

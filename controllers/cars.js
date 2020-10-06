@@ -16,15 +16,11 @@ const aboutUs = (req, res) => {
 
 const addCar = (req, res) => {
     req.body.driverId = req.params.driverId
-    // Driver.findByPk(req.driver.id) 
+
     res.render('addCar.ejs', {
         driverId: req.query.driverId
     })
-    // .then(foundDriver => {
-    //     res.render('addCar.ejs', {
-    //         driver: foundDriver
-    //     })
-    // })
+    
 }
 
 const showRoom = (req, res) => {
