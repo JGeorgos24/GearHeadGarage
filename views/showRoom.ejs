@@ -35,11 +35,8 @@
     <div class="content">
         <div id="showRoom">
             <div class= "showRoomCars">
-                
                     <% for(let i = 0; i <cars.length; i++) {%>
-
                         <div class='car-list'>
-                            
                              <%=cars[i].year%> <%=cars[i].make%>
                              <%=cars[i].model%> 
                              <img class="thumbnail" src="<%=cars[i].imageURL%>"
@@ -47,12 +44,8 @@
                              <div class="overlay">
                                 <div class="text"><%=cars[i].year%><br/><%=cars[i].make%><br/><%=cars[i].model%><br/></div>
                               </div>
-                            
                         </div>
-
-                        <br/>
                     <% } %>
-                
             </div>    
         </div>
     </div>
