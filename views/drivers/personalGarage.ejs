@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>Gear Head Garage</title>
+    <title>GHG - Personal Garage</title>
     <link rel="stylesheet" href="/css/app.css" />
 </head>
 
@@ -33,8 +33,19 @@
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        
-
+        <div id="personalGarage">
+            <div class= "personalGarageContent">
+                <ul class= allDriversCars >
+                    <% for(let i = 0; i <driver.Cars.length; i++) {%>
+                        <li>
+                            <a class="driversCars" href="/cars/<%=driver.Cars[i].id%>"> <%=driver.Cars[i].year%> <%=driver.Cars[i].make%> <%=driver.Cars[i].model%> </a>
+                    
+                        </li>
+                        <br/>
+                    <% } %>
+                </ul>
+            </div>    
+        </div>       
     </div>
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
 

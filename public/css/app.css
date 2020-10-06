@@ -116,7 +116,7 @@ a {
     }
 }
 
-#loginBox, #addCar, #showMadeCar, #showRoom, #aboutUs {
+#loginBox, #addCar, #showMadeCar, #showRoom, #aboutUs, #personalGarage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,7 +165,7 @@ a {
 }
 
 
-.loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars, .aboutUsContent {
+.loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars, .aboutUsContent, .personalGarageContent {
     display: flex;
     justify-content: center;
     align-items: center;

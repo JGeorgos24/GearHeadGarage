@@ -44,7 +44,7 @@ const createCar = (req, res) => {
     req.body.driverId = req.params.driverId
     Car.create(req.body)
     .then(newCar => {
-        res.redirect('/cars');
+        res.redirect('/cars/showroom');
     })
 }
 
@@ -65,8 +65,6 @@ const seeMadeCar = (req, res) => {
         });
     }) 
 }
-
-
 
 const deleteCar = (req,res) => {
     Car.destroy({
