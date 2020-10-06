@@ -165,6 +165,8 @@ a {
 }
 
 .showRoomCars {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -179,6 +181,9 @@ a {
     overflow: scroll;
 }
 
+.showRoomCars::-webkit-scrollbar {
+    display: none;
+}
 
 .car-list {
     position: relative;
@@ -199,7 +204,6 @@ a {
     width: auto;
     height: 300px;
     margin: auto;
-    
 }
 
 .overlay {
