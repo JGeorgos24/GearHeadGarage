@@ -5,7 +5,9 @@ const Driver = require('../models').Driver;
 
 
 const index = (req, res) => {
-        res.render('index.ejs')  
+        res.render('index.ejs', {
+            loggedIn: false
+        })  
 }
 
 const aboutUs = (req, res) => {
@@ -13,7 +15,14 @@ const aboutUs = (req, res) => {
 }
 
 const addCar = (req, res) => {
+    console.log(req.params)
+    // Driver.findByPk(req.driver.id) 
     res.render('addCar.ejs')
+    // .then(foundDriver => {
+    //     res.render('addCar.ejs', {
+    //         driver: foundDriver
+    //     })
+    // })
 }
 
 const showRoom = (req, res) => {
@@ -25,7 +34,6 @@ const showRoom = (req, res) => {
             ]
         }) 
         .then(allCars => {
-             console.log(allCars);
             res.render('showRoom.ejs', {
                 cars: allCars 
             })  

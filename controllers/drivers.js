@@ -25,6 +25,15 @@ const profilePage = (req, res) => {
 
 
 const editProfile = (req, res) => {
+    // empty boxes show a string rather than zero. boxes need ineters to update.
+    // Setting " " to a zero.
+    if (req.body.age === ""){
+        req.body.age = 0
+    }
+    if (req.body.drivingExperience === "") {
+        req.body.drivingExperience = 0
+    }
+
     Driver.update(req.body, {
         where: { id: req.driver.id },
         returning: true // MUST NEED TO SHOW CHANGE

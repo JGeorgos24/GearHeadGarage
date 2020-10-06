@@ -10,13 +10,11 @@ const jwt = require('jsonwebtoken');
 
 // shows signup page
 const renderSignup = (req, res) => {
-    Driver.findByPk(req.params.index)
-        .then(driver => {
             res.render('drivers/register.ejs', {
-                driver: driver
+                loggedIn: false
             });
-        })
 }
+
 // shows login page
 const renderLogin = (req, res) => {
     res.render('drivers/login.ejs');
