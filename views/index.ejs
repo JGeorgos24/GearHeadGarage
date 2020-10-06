@@ -22,6 +22,9 @@
             <div id="left-nav">
                 <a href="/cars/aboutUs">About Us</a>
                 <a href="/cars/showRoom" class="add-pipe">Show Room</a>
+                <% if (loggedIn) { %>
+                <a href="/cars/addCar" class="add-pipe">Add a Car</a>
+               <% } %>
             </div>
             <div id="right-nav">
                 <a href="/auth/signup">Register</a>
