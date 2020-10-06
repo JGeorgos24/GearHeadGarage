@@ -39,7 +39,9 @@
                     <% for(let i = 0; i <driver.Cars.length; i++) {%>
                         <li>
                             <a class="driversCars" href="/cars/<%=driver.Cars[i].id%>"> <%=driver.Cars[i].year%> <%=driver.Cars[i].make%> <%=driver.Cars[i].model%> </a>
-                    
+                            <form action="/cars/<%=driver.Cars[i].id%>?_method=DELETE" method="POST">
+                                <input type="submit" value="Sell Car" />
+                            </form>   
                         </li>
                         <br/>
                     <% } %>
