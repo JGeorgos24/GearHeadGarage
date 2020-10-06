@@ -60,7 +60,7 @@ const personalGarage = (req, res) => {
         ]
     })
     .then(driversGarage => {
-        res.render('/drivers/personalGarage.ejs', {
+        res.render('drivers/personalGarage.ejs', {
             driver: driversGarage
         })
     })
