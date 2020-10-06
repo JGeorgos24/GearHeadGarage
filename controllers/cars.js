@@ -15,7 +15,6 @@ const aboutUs = (req, res) => {
 }
 
 const addCar = (req, res) => {
-    console.log(req.params)
     // Driver.findByPk(req.driver.id) 
     res.render('addCar.ejs')
     // .then(foundDriver => {
