@@ -50,10 +50,25 @@ const deleteProfile = (req, res) => {
         })
 }
 
-
+const personalGarage = (req, res) => {
+    Driver.findByPk(req.driver.id, {
+        include: [
+            {
+                model: Car,
+                attributes: ['make', 'model', 'year']
+            }
+        ]
+    })
+    .then(driversGarage => {
+        res.render('drivers/personalGarage.ejs', {
+            driver: driversGarage
+        })
+    })
+}
 
 module.exports = {
     profilePage,
     editProfile,
-    deleteProfile
+    deleteProfile,
+    personalGarage
 }

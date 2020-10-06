@@ -10,7 +10,7 @@ router.get('/addCar', ctrl.cars.addCar);
 
 router.get('/showRoom', ctrl.cars.showRoom);
 
-router.post('/cars', ctrl.cars.createCar);
+router.post('/:driverId', ctrl.cars.createCar);
 
 router.get('/:index', ctrl.cars.seeMadeCar);
 

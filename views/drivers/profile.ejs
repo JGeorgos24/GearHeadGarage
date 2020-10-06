@@ -22,8 +22,8 @@
             <div id="left-nav">
                 <a href="/cars/aboutUs">About Us</a>
                 <a href="/cars/showroom" class="add-pipe">Show Room</a>
-                <a href="/cars/addCar" class="add-pipe">Add a Car</a>
-                <a href="/cars/personalgarage" class="add-pipe">Personal Garage</a>
+                <a href="/cars/addCar/?driverId=<%=driver.id%>" class="add-pipe">Add a Car</a>
+                <a href="/drivers/personalGarage" class="add-pipe">Personal Garage</a>
             </div>
             <div id="right-nav">
                 
@@ -57,13 +57,6 @@
                 <input type="submit" value="Delete" />
             </form>
 
-            <h3>List of Cars</h3>
-            <ul>
-                <% for (i=0; i < driver.Cars.length; i++){ %>
-                <li><a href="/cars/<%driver.Cars[i].id %>"><%= driver.Cars[i].make %></a></li>
-                <% } %>
-            </ul>
-            <a href="/cars/showroom">View all cars</a>
         </div>
 
     </div>

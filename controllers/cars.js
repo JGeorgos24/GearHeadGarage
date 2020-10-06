@@ -15,13 +15,12 @@ const aboutUs = (req, res) => {
 }
 
 const addCar = (req, res) => {
-    // Driver.findByPk(req.driver.id) 
-    res.render('addCar.ejs')
-    // .then(foundDriver => {
-    //     res.render('addCar.ejs', {
-    //         driver: foundDriver
-    //     })
-    // })
+    req.body.driverId = req.params.driverId
+
+    res.render('addCar.ejs', {
+        driverId: req.query.driverId
+    })
+    
 }
 
 const showRoom = (req, res) => {
@@ -42,6 +41,7 @@ const showRoom = (req, res) => {
 }
 
 const createCar = (req, res) => {
+    req.body.driverId = req.params.driverId
     Car.create(req.body)
     .then(newCar => {
         res.redirect('/cars');
