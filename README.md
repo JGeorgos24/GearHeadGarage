@@ -2,8 +2,9 @@
 
 
 ## Project Description
+![Alt Text](https://i.imgur.com/FK2AmTQ.gif)
 
-Use this section to describe your final project and perhaps any links to relevant sites that help convey the concept and\or functionality.
+Gear Head Garage is a place for all car enthusiasts and grease monkeys to come and share their love and passion for cars. The goal of our website is to create a fun and friendly environment for car enthusiast to upload and share their beloved cars of their own to the rest of the world. Gear Head Garage makes it possible for car owners to upload images of their car and share their car builds with other car enthusiast. 
 
 ## Project Links
 
