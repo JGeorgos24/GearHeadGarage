@@ -16,16 +16,14 @@ const aboutUs = (req, res) => {
 
 const addCar = (req, res) => {
     req.body.driverId = req.params.driverId
-
     res.render('addCar.ejs', {
-        driverId: req.query.driverId
-    })
-    
+        driverId: req.query.driverId,
+        msg:'',
+    })   
 }
 
 const showRoom = (req, res) => {
-    {
-        Car.findAll({
+    {Car.findAll({
             order: [
                 ['make', 'ASC'],
                 ['id', 'ASC']
@@ -36,27 +34,21 @@ const showRoom = (req, res) => {
                 cars: allCars 
             })  
         })  
-        
     }
 }
 
 const createCar = (req, res) => {
     req.body.driverId = req.params.driverId
-    Car.create(req.body)
-    .then(newCar => {
-        res.redirect('/drivers/personalGarage');
-    })
-}
+        Car.create(req.body)
+            .then(newCar => {
+                res.redirect('/drivers/personalGarage');
+            })   
+}  
+
 
 
 const seeMadeCar = (req, res) => {
     Car.findByPk(req.params.index , {
-    //     include: [
-    //         {
-    //         model: Driver,
-    //         attributes: ['name']
-    //         }
-    //     ],
         attributes: ['year', 'make', 'model', 'imageURL']        
     })
     .then(foundCar => {
