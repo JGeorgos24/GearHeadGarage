@@ -22,6 +22,7 @@
             <div id="left-nav">
                 <a href="/cars/aboutUs">About Us</a>
                 <a href="/cars/showroom" class="add-pipe">Show Room</a>
+                <a href="#" class="add-pipe"></a>
             </div>
 
             <div id="right-nav">
@@ -37,9 +38,9 @@
         <div id="loginBox">
         <form action="/auth/login" method="POST">
             <div class="loginCredentials">
-                <h3><%=msg%></h3>
-            <input type="text" name="username" placeholder="Enter Username" required="required"/><br/><br/>
-            <input type="text" name="password" placeholder="Enter Password" required="required"/><br/><br/>
+                <h4><%=msg%></h4>
+            <input type="text" name="username" placeholder="Enter Username" required="required"/><br/>
+            <input type="text" name="password" placeholder="Enter Password" required="required"/><br/>
             <input type="submit" value="Login">
             </div>
         </form>
