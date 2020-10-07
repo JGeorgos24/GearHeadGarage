@@ -18,6 +18,8 @@ Inserted below is a navigational link to a PDF slideshow of our wireframes for o
 
 - Wireframes and Website Architecture = [Gear Head Garage Wireframes](https://docs.google.com/presentation/d/1_BFz0_28KXCFrs8RDh_PVk9y6f5yklLjPDWCd1eebL0/edit?usp=sharing)
 
+- Auto Slide Show on Web = [Gear Head Garage Wireframes](https://docs.google.com/presentation/d/e/2PACX-1vRwzvQqAHfRAWssQN394EjXMelpak71GS_NRatu-TyPJBKctVNXzIgBPNqiKlUGprOtDlNFYDcYUC89/pub?start=true&loop=true&delayms=30000)
+
 
 ### MVP/PostMVP 
 
