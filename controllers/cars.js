@@ -57,7 +57,7 @@ const seeMadeCar = (req, res) => {
     //         attributes: ['name']
     //         }
     //     ],
-        attributes: ['year', 'make', 'model', 'imageURL']        
+        attributes: ['year', 'make', 'model', 'imageURL', 'id']        
     })
     .then(foundCar => {
         res.render('showMadeCar.ejs', {
