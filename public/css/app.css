@@ -4,8 +4,8 @@ html, body {
     display: flex;
     flex-direction: column;
     background-color: #000000;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -164,7 +164,6 @@ a {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
 
-
 .loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars, .aboutUsContent, .personalGarageContent {
     display: flex;
     justify-content: center;
@@ -178,4 +177,136 @@ a {
     padding: 10px;
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
-    
+
+.license {
+    background-color: black;
+    border: 3px solid red;
+    border-radius: 23px;
+    border-style: outset;
+    height: 35vh;
+    width: 40vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex: 0;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-dl-box {
+    /* border: 3px solid green; */
+    text-align: justify;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    font-size: 25px;
+    margin: -5px;
+    width: 100%;
+    color: white;
+    text-decoration: underline;
+}
+
+.dl-info {
+    display: flex;
+    align-content: center;
+    margin: auto;
+    margin-top: 2px;
+    color: white;
+}
+
+.dl-form {
+    display: flex;
+    /* border: 3px solid blue; */
+    width: 20vw;
+    text-align: left;
+    font-weight: 600;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.image-holder {
+    /* border: 3px solid yellow; */
+    flex: 1;
+    flex-flow: column wrap;
+    overflow: hidden;
+    /* border: 2px solid yellow; */
+    border-radius: 30px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 100%;
+    width: 200px;
+}
+
+.driver-image {
+    /* border: 3px solid yellow; */
+    height: 20vh;
+    width: auto;
+    margin: -10px 0px -40px -60px
+}
+
+.line-space {
+    height: 5px;
+}
+
+@media (max-width: 1400px) {
+    .profileCredentials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 60vh;
+        width: 60vw;
+        background-color: #C7D6D5;
+        border-radius: 15px;
+        text-align: center;
+        padding: 10px;
+        box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .license {
+        flex-direction: column;
+        align-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    .top-dl-box {
+        /* border: 3px solid green; */
+        text-align: justify;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        font-size: 15px;
+        margin: -5px;
+        width: 100%;
+        color: white;
+        text-decoration: underline;
+    }
+
+    .dl-info {
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .dl-form {
+        display: flex;
+        justify-content: center;
+        width: 20vw;
+        text-align: left;
+        font-weight: 600;
+        padding: 3px;
+        margin-left: 10px;
+    }
+
+    .image-holder {
+        /* border: 2px solid black; */
+        border-radius: 30px;
+        height: 100%;
+        width: 100%;
+    }
+    .driver-image {
+        /* border: 3px solid yellow; */
+        height: 15vh;
+        width: auto;
+        margin: -10px 0px -20px -25px
+    }
+
+}
