@@ -85,16 +85,29 @@ Estimated time frames of when we want certain goals to be completed by.
 | Social Media Link | PostMVP | Complete | 10/8/20 | 10/8/20 |
 | Improve Overall Styling | PostMVP | Complete | 10/8/20 | 10/8/20 |
 
-## Additional Libraries
- Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
 
 ## Code Snippet
 
 Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
 
+We are proud of this code because we were able to style our showroom page as we intended in our wireframe with a scrollable div or slide show. 
+
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+.showRoomCars {
+-ms-overflow-style: none;
+scrollbar-width: none;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+height: 50vh;
+width: 70vw;
+background-color: #C7D6D5;
+border-radius: 15px;
+text-align: left;
+padding: 10px;
+box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+overflow: scroll;
 }
 ```
 
