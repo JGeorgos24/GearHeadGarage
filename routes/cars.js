@@ -6,6 +6,8 @@ router.get('/', ctrl.cars.index);
 
 router.get('/aboutUs', ctrl.cars.aboutUs);
 
+router.get('/carMeets', ctrl.cars.carMeets);
+
 router.get('/addCar', ctrl.cars.addCar);
 
 router.get('/showRoom', ctrl.cars.showRoom);

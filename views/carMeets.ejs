@@ -35,9 +35,40 @@
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <div class="image-box">
-        <img id='logo' src="https://i.imgur.com/MVAYwrJ.png" alt="GHG Logo" />
+        <div id=carMeets>
+            <div class="carMeetsContent">
+                <h3>Google Maps</h3>
+                <!--The div element for the map -->
+                <div id="map"></div>
+                <script>
+                    // Initialize and add the map
+                    function initMap() {
+                        // The location of Uluru
+                        let location = {lat: -25.344, lng: 131.036};
+                        // The map, centered at Uluru
+                        let map = new google.maps.Map(
+                        document.getElementById('map'), {
+                            zoom: 4, 
+                            center: location
+                        });
+                        // The marker, positioned at Uluru
+                        let marker = new google.maps.Marker({
+                            position: location, 
+                            map: map
+                        });
+                    }
+                </script>
+                <!--Load the API from the specified URL
+                * The async attribute allows the browser to render the page while the API loads
+                * The key parameter will contain your own API key (which is not needed for this tutorial)
+                * The callback parameter executes the initMap() function
+                -->
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfhLuaehN74rBF0_1fmveWRC-2KNqRcec&callback=initMap">
+                </script>
+            
+            </div>
         </div>
+
     </div>
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
 

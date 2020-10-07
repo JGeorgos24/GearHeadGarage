@@ -116,7 +116,7 @@ a {
     }
 }
 
-#loginBox, #addCar, #showMadeCar, #showRoom, #aboutUs, #personalGarage {
+#loginBox, #addCar, #showMadeCar, #showRoom, #aboutUs, #personalGarage, #carMeets {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +164,7 @@ a {
     box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
 }
 
-.loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars, .aboutUsContent, .personalGarageContent {
+.loginCredentials, .addCarContent, .showMadeCarContent, .showRoomCars, .aboutUsContent, .personalGarageContent, .carMeetsContent {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -309,4 +309,34 @@ a {
         margin: -10px 0px -20px -25px
     }
 
+}
+
+
+#carMeets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    width: 90vw;
+    background-color: #c7d6d57a;
+    border-radius: 20px;
+}
+
+.carMeetsContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 85vw;
+    background-color: #C7D6D5;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+}
+
+#map{
+    height:60vh;
+    width:80vw;
 }
