@@ -66,13 +66,24 @@ Descriptions of different components in our application.
 
 ## Time Frames
 
-Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Also, put a gif at the top of your Readme before you pitch, and you'll get a panda prize.
+Estimated time frames of when we want certain goals to be completed by. 
 
-| Component | Priority | Estimated Time | Time Invetsted | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Component | MVP/PostMVP | Status | Goal Date for Completion |Completed By Date |
+| --- | :---: | :---: | :---: | :---: |
+| Project Approval | MVP | Complete | 10/2/20 | 10/2/20 |
+| Construct Migration Files | MVP | Complete | 10/2/20 | 10/3/20 |
+| Test MVC  | MVP | Complete | 10/3/20 | 10/4/20 |
+| Render App in Browser | MVP | Complete | 10/4/20 | 10/4/20 |
+| Test MVC  | MVP | Complete | 10/3/20 | 10/4/20 |
+| Add Collaborator in Github | MVP | Complete | 10/2/20 | 10/4/20 |
+| Create Models  | MVP | Complete | 10/5/20 | 10/5/20 |
+| Complete CRUD for Models  | MVP | Complete | 10/6/20 | 10/5/20 |
+| Deploy to Heroku  | MVP | Complete | 10/6/20 | 10/6/20 |
+| Encrypted Passwords  | PostMVP | Complete | 10/7/20 | 10/5/20 |
+| Authorization Flow add car/personal garage  | PostMVP | Complete | 10/7/20 | 10/6/20 |
+| Showroom Styling  | PostMVP | Complete | 10/7/20 | 10/6/20 |
+| Social Media Link | PostMVP | Complete | 10/8/20 | 10/8/20 |
+| Improve Overall Styling | PostMVP | Complete | 10/8/20 | 10/8/20 |
 
 ## Additional Libraries
  Use this section to list all supporting libraries and thier role in the project such as Axios, ReactStrap, D3, etc. 
