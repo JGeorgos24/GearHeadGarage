@@ -7,32 +7,48 @@ Use this section to describe your final project and perhaps any links to relevan
 
 ## Project Links
 
+Below are links to navigate to our project repository and deployed website link. 
+
 - GitHub Repo = [https://github.com/JGeorgos24/GearHeadGarage]()
 - Deployment = [https://gearheadgarage-app.herokuapp.com/cars]() 
 
 ## Wireframes
 
-Upload images of wireframe to cloudinary and add the link here with a description of the specific wireframe.
+Inserted below is a navigational link to a PDF slideshow of our wireframes for our project.
 
-- [wireframes]()
-- [react architecture]()
+- Wireframes and Website Architecture [file:///Users/JG46675/Downloads/Project%202%20-%20Gear%20Head%20Garage%20-Wireframes.pdf]()
 
-
-
-Define the the React components and the architectural design of your app.
 
 ### MVP/PostMVP - 5min
 
-The functionality will then be divided into two separate lists: MPV and PostMVP.  Carefully decided what is placed into your MVP as the client will expect this functionality to be implemented upon project completion.  
+The functionality of our website will be broken down into separate list: MVP and Post MVP. MVP will be the minimum viable product our client expects to see out of our website. Post MVP will be any additional product we can add to our website to improve functionality and styling.
 
-#### MVP EXAMPLE
-- Find and use external api 
-- Render data on page 
-- Allow user to interact with the page
+
+#### MVP for Gear Head Garage
+- Each page can render properly.
+- User can add a car. 
+- User can delete car.
+- User is allowed register and make a profile.
+- User is allowed to delete there profile.
+- User can login with correct credentials.
+- User view cars in showroom.
+- Have a working full-stack application using Node.js, Postgres and EJS.
+- Construct app to have a MVC structure: Model, View, Controllers.
+- Complete CRUD functionality for one model. 
+- Allow communication between 2 models.
+- Have at least 50 GitHub commits.
+- Deploy website on Heroku.
+
 
 #### PostMVP EXAMPLE
-
-- Add localStorage or firebase for storage
+- Add encrypted passwords
+- Add authorization flow to only access personal garage when signed in.
+- Add authorization flow to only access add a car when signed in.
+- Improves CSS styling in showroom from ordered listed to scroll box or a slide show. 
+- Have social media links actually navigate to a Gear Head Garage social media page.
+- Improve overall styling on website.
+- Improve data validation through out the website. 
+- Incorporate google maps so car meets can be posted and located on Gear Head Garage website.
 
 ## Components
 ##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
