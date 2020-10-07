@@ -42,7 +42,7 @@ The functionality of our website will be broken down into separate list: MVP and
 - Deploy website on Heroku.
 
 
-#### PostMVP EXAMPLE
+#### PostMVP 
 - Add encrypted passwords
 - Add authorization flow to only access personal garage when signed in.
 - Add authorization flow to only access add a car when signed in.
@@ -53,15 +53,16 @@ The functionality of our website will be broken down into separate list: MVP and
 - Incorporate google maps so car meets can be posted and located on Gear Head Garage website.
 
 ## Components
-##### Writing out your components and its descriptions isn't a required part of the proposal but can be helpful.
-
-Based on the initial logic defined in the previous sections try and breakdown the logic further into stateless/stateful components. 
+Descriptions of different components in our application. 
 
 | Component | Description | 
-| --- | :---: |  
-| App | This will make the initial data pull and include React Router| 
-| Header | This will render the header include the nav | 
-| Footer | This will render the header include the nav | 
+| --- | :---: | 
+| App/injex.js | This will make the initial data pull and include all view, routes and controller functions| 
+| Header | This will render the header including the left-nav and right-nav |
+| Left-nav | This will render navigational links to about us, showroom, add a car and personal garage pages. | 
+| Right-nav | This will render navigational links to register a new user, login a user and go back to user profile. |
+| Div class= content | This will render all information of the page that is currently trying to be viewed. |
+| Footer | This will render navigational links to Gear Head Garage's Social Media account and a link back to the Gear Head Garage homepage. | 
 
 ## Time Frames
 
