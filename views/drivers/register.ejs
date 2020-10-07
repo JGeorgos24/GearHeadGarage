@@ -36,9 +36,10 @@
         <div id="signUpBox">
         <form action="/auth/signup" method="POST">
             <div class="signUpCredentials">
-            <input type="text" name="name" placeholder="Enter Drivers Name" /><br /><br />
-            <input type="text" name="username" placeholder="Create Username"/><br /><br />
-            <input type="text" name="password" placeholder="Create Password"/><br/><br/>
+                <h3><%=msg%></h3>
+            <input type="text" name="name" placeholder="Enter Drivers Name" required="required" /><br /><br />
+            <input type="text" name="username" placeholder="Create Username" required="required"/><br /><br />
+            <input type="text" name="password" placeholder="Create Password" required="required"/><br/><br/>
             <input type="submit" value="Sign Up">
             </div>
         </form>

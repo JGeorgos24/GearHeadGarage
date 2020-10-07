@@ -37,8 +37,9 @@
         <div id="loginBox">
         <form action="/auth/login" method="POST">
             <div class="loginCredentials">
-            <input type="text" name="username" placeholder="Enter Username"/><br/><br/>
-            <input type="text" name="password" placeholder="Enter Password"/><br/><br/>
+                <h3><%=msg%></h3>
+            <input type="text" name="username" placeholder="Enter Username" required="required"/><br/><br/>
+            <input type="text" name="password" placeholder="Enter Password" required="required"/><br/><br/>
             <input type="submit" value="Login">
             </div>
         </form>

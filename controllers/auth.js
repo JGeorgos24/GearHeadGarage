@@ -11,16 +11,32 @@ const jwt = require('jsonwebtoken');
 // shows signup page
 const renderSignup = (req, res) => {
             res.render('drivers/register.ejs', {
-                loggedIn: false
-            });
-}
+                msg: ''
+            })
+        }
 
 // shows login page
 const renderLogin = (req, res) => {
-    res.render('drivers/login.ejs');
+    res.render('drivers/login.ejs', {
+        msg: ''
+    })
 }
 
 const createUser = (req, res) => {
+    if(!req.body.name || req.body.name === ''){
+        res.render('drivers/register.ejs', {
+            msg: 'A name is required'
+        })
+    } else if(!req.body.username || req.body.username === ''){
+        res.render('drivers/register.ejs', {
+            msg: 'A username is required'
+        })
+    } else if(!req.body.password || req.body.password === ''){
+        res.render('drivers/register.ejs', {
+            msg: 'A password is required'
+        })
+    } else
+
     bcrypt.genSalt(10, (err, salt) => {
         if (err) {
             return res.send('err');
@@ -51,12 +67,33 @@ const createUser = (req, res) => {
                     res.redirect(`/drivers/profile`);
                 
                 })
+                .catch(err => {
+                    if (err.name === 'SequelizeUniqueConstraintError'){
+                        res.render('drivers/register.ejs',{
+                            msg: 'Username is already taken.',
+                            driver: req.body
+                        })
+                    } else {
+                        res.send('An unknown error has occurred')
+                    }
+            })
 
         })
     })
+
 }
 
 const checkUser = (req, res) => {
+    if(!req.body.username || req.body.username === ''){
+        res.render('drivers/login.ejs', {
+            msg: 'A username is required'
+        })
+    } else if(!req.body.password || req.body.password === ''){
+        res.render('drivers/login.ejs', {
+            msg: 'A password is required'
+        })
+    } else
+
     Driver.findOne({
         where: {
             username: req.body.username
@@ -87,40 +124,7 @@ const checkUser = (req, res) => {
             }
 
         })
-        // .catch(err => {
-        //     console.log(err)
-        // })
 }
-// const checkUser = (req, res) => {
-//     if(!req.body.username || req.body.username === ''){
-//         res.render('drivers/login.ejs', {
-//             msg: 'A username is required',
-//             driver: req.body
-//         })
-//     }
-//     if(!req.body.password || req.body.password === ''){
-//         res.render('drivers/login.ejs', {
-//             msg: 'A password is required',
-//             driver: req.body
-//         })
-//     }
-//     Driver.findOne({
-//         where: {
-//             username: req.body.username,
-//             password: req.body.password
-//         }
-//     })
-//     .then(foundDriver => {
-//         if(!foundDriver){
-//             res.render('drivers/login.ejs',{
-//                 msg: 'Incorrect username/password',
-//                 driver: req.body
-//             })
-//         }
-//         res.redirect(`/drivers/profile/${foundDriver.id}`);
-//     })
-// }
-
 
 module.exports = {
 
