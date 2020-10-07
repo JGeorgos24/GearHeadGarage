@@ -16,10 +16,10 @@ Below are links to navigate to our project repository and deployed website link.
 
 Inserted below is a navigational link to a PDF slideshow of our wireframes for our project.
 
-- Wireframes and Website Architecture = [file:///Users/JG46675/Downloads/Project%202%20-%20Gear%20Head%20Garage%20-Wireframes.pdf]()
+- Wireframes and Website Architecture = [https://docs.google.com/presentation/d/1_BFz0_28KXCFrs8RDh_PVk9y6f5yklLjPDWCd1eebL0/edit?usp=sharing]()
 
 
-### MVP/PostMVP - 5min
+### MVP/PostMVP 
 
 The functionality of our website will be broken down into separate list: MVP and Post MVP. MVP will be the minimum viable product our client expects to see out of our website. Post MVP will be any additional product we can add to our website to improve functionality and styling.
 
