@@ -21,6 +21,22 @@ Inserted below is a navigational link to a PDF slideshow of our wireframes for o
 - Auto Slide Show on Web = [Gear Head Garage Wireframes](https://docs.google.com/presentation/d/e/2PACX-1vRwzvQqAHfRAWssQN394EjXMelpak71GS_NRatu-TyPJBKctVNXzIgBPNqiKlUGprOtDlNFYDcYUC89/pub?start=true&loop=true&delayms=30000)
 
 
+## User Stories
+
+Below are links to navigate to our project repository and deployed website link. 
+
+	1. As a  car enthusiast I want to be able to access the Gear Head Garage website to share my cars and view other car enthusiast's cars.
+	2. As a user I want to be able to register to the Gear Head Garage website through the register tab.
+	3. As a user want to be able to login and create a driver profile so I can create/manage my car inventory.
+	4. As a registered user I want to be able to create an upload my car information. 
+	5. As a registered user I want to be able to manage my cars in my garage. 
+	6. As a registered car owner I want to be able to edit the cars I have in my garage. 
+	7. As a non-registered user I should be able to view all the cars in the GHG showroom.
+	8. As a non-registered user I should be able to go to the GHG About Us tab and view what the GHG society/website is a about.
+	9. As a non-registered user I should be able to navigate to the Gear Head Garage Twitter, Facebook and Instagram page/pages. 
+    10. As a registered user I should be able to delete my GHG profile and any car associated with my profile. 
+
+
 ### MVP/PostMVP 
 
 The functionality of our website will be broken down into separate list: MVP and Post MVP. MVP will be the minimum viable product our client expects to see out of our website. Post MVP will be any additional product we can add to our website to improve functionality and styling.
@@ -88,7 +104,7 @@ Estimated time frames of when we want certain goals to be completed by.
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description.  Code snippet should not be greater than 10 lines of code. 
+Use this section to include a brief code snippet of functionality that you are proud of an a brief description.   
 
 We are proud of this code because we were able to style our showroom page as we intended in our wireframe with a scrollable div or slide show. 
 
@@ -111,9 +127,3 @@ overflow: scroll;
 }
 ```
 
-## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
-
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
