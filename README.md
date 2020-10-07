@@ -16,7 +16,7 @@ Below are links to navigate to our project repository and deployed website link.
 
 Inserted below is a navigational link to a PDF slideshow of our wireframes for our project.
 
-- Wireframes and Website Architecture [file:///Users/JG46675/Downloads/Project%202%20-%20Gear%20Head%20Garage%20-Wireframes.pdf]()
+- Wireframes and Website Architecture = [file:///Users/JG46675/Downloads/Project%202%20-%20Gear%20Head%20Garage%20-Wireframes.pdf]()
 
 
 ### MVP/PostMVP - 5min
