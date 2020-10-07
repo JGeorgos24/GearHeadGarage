@@ -9,14 +9,14 @@ Use this section to describe your final project and perhaps any links to relevan
 
 Below are links to navigate to our project repository and deployed website link. 
 
-- GitHub Repo = [a link](https://github.com/JGeorgos24/GearHeadGarage)
-- Deployment = [a link](https://gearheadgarage-app.herokuapp.com/cars) 
+- GitHub Repo = [Gear Head Garage Repo](https://github.com/JGeorgos24/GearHeadGarage)
+- Deployment = [Gear Head Garage App](https://gearheadgarage-app.herokuapp.com/cars) 
 
 ## Wireframes
 
 Inserted below is a navigational link to a PDF slideshow of our wireframes for our project.
 
-- Wireframes and Website Architecture = [a link](https://docs.google.com/presentation/d/1_BFz0_28KXCFrs8RDh_PVk9y6f5yklLjPDWCd1eebL0/edit?usp=sharing)
+- Wireframes and Website Architecture = [Gear Head Garage Wireframes](https://docs.google.com/presentation/d/1_BFz0_28KXCFrs8RDh_PVk9y6f5yklLjPDWCd1eebL0/edit?usp=sharing)
 
 
 ### MVP/PostMVP 
