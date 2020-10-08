@@ -116,11 +116,16 @@ const checkUser = (req, res) => {
                         res.cookie('jwt', token)
                         res.redirect(`/drivers/profile`);
                     } else {
-                        res.send('incorrect password/username')
+                        res.render('drivers/login.ejs',{
+                          msg: 'Incorrect username/password' 
+                        })
+                        
                     }
                 });
             } else {
-                res.send('incorrect password/username')
+                res.render('drivers/login.ejs',{
+                    msg: 'Incorrect username/password' 
+                  })
             }
 
         })
