@@ -4,6 +4,8 @@
 ## Project Description
 ![Alt Text](https://i.imgur.com/FK2AmTQ.gif)
 
+The goal of this project was to make a full CRUD app using Node.js, Postgres and EJS while incorporating a MVC file structure.  
+
 Gear Head Garage is a place for all car enthusiasts and grease monkeys to come and share their love and passion for cars. The goal of our website is to create a fun and friendly environment for car enthusiast to upload and share their beloved cars of their own to the rest of the world. Gear Head Garage makes it possible for car owners to upload images of their car and share their car builds with other car enthusiast. 
 
 ## Project Links
@@ -79,7 +81,7 @@ Descriptions of different components in our application.
 | Left-nav | This will render navigational links to about us, showroom, add a car and personal garage pages. | 
 | Right-nav | This will render navigational links to register a new user, login a user and go back to a user profile. |
 | Div class= content | This will render all information of the page that is currently trying to be viewed. |
-| Footer | This will render navigational links to Gear Head Garage's Social Media accounts and a link back to the Gear Head Garage homepage. | 
+| Footer | This will render navigational links to Gear Head Garage's social media accounts and a link back to the Gear Head Garage homepage. | 
 
 ## Time Frames
 
