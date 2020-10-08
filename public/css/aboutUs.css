@@ -114,7 +114,11 @@ a {
     #right-nav {
         margin-left: 0;
     }
+    .aboutUsContent {
+        overflow: scroll;
+    }
 }
+
 
 #loginBox, #addCar, #showMadeCar, #showRoom, #aboutUs {
     display: flex;
