@@ -40,24 +40,51 @@
                 <h3>Gear Head Garage Car Meets Presented Google Maps</h3>
                 <!--The div element for the map -->
                 <div id="map"></div>
-                <script>
-                    // Initialize and add the map
-                    function initMap() {
-                        // The location of Uluru
-                        let location = {lat: 42.444893, lng: -92.314005};
-                        // The map, centered at Uluru
-                        let map = new google.maps.Map(
-                        document.getElementById('map'), {
-                            zoom: 4, 
-                            center: location
+                <script type="text/javascript">
+                    function initialize() {
+                      var locations = [
+                        ['Davenport', 41.543056, -90.590836, 4],
+                        ['Iowa City', 41.661129, -91.530167, 5],
+                        ['Des Moines', 41.619549, -93.598022, 3],
+                        ['Waterloo', 42.488831378, -92.340998636, 2],
+                        ['Dubuque', 42.518, -90.706, 1]
+                      ];
+                  
+                      var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 7,
+                        center: new google.maps.LatLng(41.8780, -93.0977),
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                      });
+                  
+                      var infowindow = new google.maps.InfoWindow();
+                  
+                      var marker, i;
+                  
+                      for (i = 0; i < locations.length; i++) {  
+                        marker = new google.maps.Marker({
+                          position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                          map: map
                         });
-                        // The marker, positioned at Uluru
-                        let marker = new google.maps.Marker({
-                            position: location, 
-                            map: map
-                        });
-                    }
-                </script>
+                  
+                        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                          return function() {
+                            infowindow.setContent(locations[i][0]);
+                            infowindow.open(map, marker);
+                          }
+                        })(marker, i));
+                      }
+                  }
+                  
+                  function loadScript() {
+                    var script = document.createElement('script');
+                    script.type = 'text/javascript';
+                    script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&' +
+                        'callback=initialize';
+                    document.body.appendChild(script);
+                  }
+                  
+                  window.onload = loadScript;
+                    </script>
                 <!--Load the API from the specified URL
                 * The async attribute allows the browser to render the page while the API loads
                 * The key parameter will contain your own API key (which is not needed for this tutorial)
