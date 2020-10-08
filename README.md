@@ -26,15 +26,15 @@ Inserted below is a navigational link to a PDF slideshow of our wireframes for o
 
 Below are links to navigate to our project repository and deployed website link. 
 
-	1. As a  car enthusiast I want to be able to access the Gear Head Garage website to share my cars and view other car enthusiast's cars.
+	1. As a car enthusiast I want to be able to access the Gear Head Garage website to share my cars and view other car enthusiast's cars.
 	2. As a user I want to be able to register to the Gear Head Garage website through the register tab.
 	3. As a user want to be able to login and create a driver profile so I can create/manage my car inventory.
-	4. As a registered user I want to be able to create an upload my car information. 
+	4. As a registered user I want to be able to create and upload my car information. 
 	5. As a registered user I want to be able to manage my cars in my garage. 
-	6. As a registered car owner I want to be able to edit the cars I have in my garage. 
+	6. As a registered car owner I want to be able to delete/edit the cars I have in my garage. 
 	7. As a non-registered user I should be able to view all the cars in the GHG showroom.
-	8. As a non-registered user I should be able to go to the GHG About Us tab and view what the GHG society/website is a about.
-	9. As a non-registered user I should be able to navigate to the Gear Head Garage Twitter, Facebook and Instagram page/pages. 
+	8. As a non-registered user I should be able to go to the GHG About Us tab and view what the GHG society/website is all about.
+	9. As a non-registered user I should be able to navigate to the Gear Head Garage Twitter, Facebook and Instagram social media accounts. 
     10. As a registered user I should be able to delete my GHG profile and any car associated with my profile. 
 
 
@@ -50,7 +50,7 @@ The functionality of our website will be broken down into separate list: MVP and
 - User is allowed register and make a profile.
 - User is allowed to delete there profile.
 - User can login with correct credentials.
-- User view cars in showroom.
+- User can view cars in showroom.
 - Have a working full-stack application using Node.js, Postgres and EJS.
 - Construct app to have a MVC structure: Model, View, Controllers.
 - Complete CRUD functionality for one model. 
@@ -74,12 +74,12 @@ Descriptions of different components in our application.
 
 | Component | Description | 
 | --- | :---: | 
-| App/injex.js | This will make the initial data pull and include all view, routes and controller functions| 
+| App/injex.js | This will make the initial data pull request and include all view, routes and controller functions| 
 | Header | This will render the header including the left-nav and right-nav |
 | Left-nav | This will render navigational links to about us, showroom, add a car and personal garage pages. | 
-| Right-nav | This will render navigational links to register a new user, login a user and go back to user profile. |
+| Right-nav | This will render navigational links to register a new user, login a user and go back to a user profile. |
 | Div class= content | This will render all information of the page that is currently trying to be viewed. |
-| Footer | This will render navigational links to Gear Head Garage's Social Media account and a link back to the Gear Head Garage homepage. | 
+| Footer | This will render navigational links to Gear Head Garage's Social Media accounts and a link back to the Gear Head Garage homepage. | 
 
 ## Time Frames
 
