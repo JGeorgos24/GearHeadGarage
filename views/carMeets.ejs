@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <title>GHG - Login</title>
+    <title>Gear Head Garage</title>
     <link rel="stylesheet" href="/css/app.css" />
 </head>
 
@@ -14,18 +14,17 @@
 
         <div id="top-box">
             <div id="top-text">
-                <h1>Gear Head Garage - Login </h1>
+                <h1>Gear Head Garage</h1>
             </div>
         </div>
 
         <div class="nav-wrapper">
             <div id="left-nav">
                 <a href="/cars/aboutUs">About Us</a>
-                <a href="/cars/showroom" class="add-pipe">Show Room</a>
+                <a href="/cars/showRoom" class="add-pipe">Show Room</a>
                 <a href="/cars/carMeets" class="add-pipe">Car Meets</a>
                 <a href="#" class="add-pipe"></a>
             </div>
-
             <div id="right-nav">
                 <a href="/auth/signup">Register</a>
                 <a href="/auth/login" class="add-pipe">Login</a>
@@ -36,20 +35,42 @@
 
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
     <div class="content">
-        <div id="loginBox">
-            <p>Enter Login Credentials</p>
-            <form action="/auth/login" method="POST">
-            <div class="loginCredentials">
-                <h4><%=msg%></h4>
-            <input type="text" name="username" placeholder="Enter Username" required="required"/><br/>
-            <input type="text" name="password" placeholder="Enter Password" required="required"/><br/>
-            <input type="submit" value="Login">
+        <div id=carMeets>
+            <div class="carMeetsContent">
+                <h3>Gear Head Garage Car Meets Presented Google Maps</h3>
+                <!--The div element for the map -->
+                <div id="map"></div>
+                <script>
+                    // Initialize and add the map
+                    function initMap() {
+                        // The location of Uluru
+                        let location = {lat: 42.444893, lng: -92.314005};
+                        // The map, centered at Uluru
+                        let map = new google.maps.Map(
+                        document.getElementById('map'), {
+                            zoom: 4, 
+                            center: location
+                        });
+                        // The marker, positioned at Uluru
+                        let marker = new google.maps.Marker({
+                            position: location, 
+                            map: map
+                        });
+                    }
+                </script>
+                <!--Load the API from the specified URL
+                * The async attribute allows the browser to render the page while the API loads
+                * The key parameter will contain your own API key (which is not needed for this tutorial)
+                * The callback parameter executes the initMap() function
+                -->
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfhLuaehN74rBF0_1fmveWRC-2KNqRcec&callback=initMap">
+                </script>
+            
             </div>
-        </form>
         </div>
+
     </div>
     <% /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-ADD CONTENT HERE-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */ %>
-
 
     <footer class="footer">
         <div class="nav-wrapper-footer">

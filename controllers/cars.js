@@ -14,6 +14,10 @@ const aboutUs = (req, res) => {
     res.render('aboutUs.ejs')
 }
 
+const carMeets = (req, res) => {
+    res.render('carMeets.ejs')
+}
+
 const addCar = (req, res) => {
     req.body.driverId = req.params.driverId
     res.render('addCar.ejs', {
@@ -71,6 +75,7 @@ const deleteCar = (req,res) => {
 module.exports = {
     index,
     aboutUs,
+    carMeets,
     addCar,
     showRoom,
     createCar,
