@@ -53,7 +53,13 @@ const createCar = (req, res) => {
 
 const seeMadeCar = (req, res) => {
     Car.findByPk(req.params.index , {
-        attributes: ['year', 'make', 'model', 'imageURL']        
+    //     include: [
+    //         {
+    //         model: Driver,
+    //         attributes: ['name']
+    //         }
+    //     ],
+        attributes: ['year', 'make', 'model', 'imageURL', 'id']        
     })
     .then(foundCar => {
         res.render('showMadeCar.ejs', {
